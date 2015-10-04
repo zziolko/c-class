@@ -24,7 +24,7 @@ int main(){
 
   for(j=0; j<MAX_VALUE; j++){
 
-    print("j = %d \n", j);
+    printf("j = %d \n", j);
 
   }
 
