@@ -4,6 +4,7 @@ OBJ_DIR=obj
 BIN_DIR=bin
 CC=gcc
 CFLAGS=-I . -I $(INC_DIR) -std=c99
+LIBS=-lm
 
 # find all source files:
 SRC:=$(shell find * -iname '*.c')
