@@ -27,5 +27,5 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(INC_DIR)/*.h
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 clean:
-	rm $(BIN_DIR)/*.run
-	rm $(OBJ_DIR)/*.o
+	rm -f $(BIN_DIR)/*.run
+	rm -f $(OBJ_DIR)/*.o
