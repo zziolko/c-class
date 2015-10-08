@@ -1,0 +1,15 @@
+CC=gcc
+CFLAGS=-O2 -Wall
+LIBS=-lm
+PROGRAM=test.x
+
+SRC=M25-printf.o 
+
+all: $(SRC)  
+	$(CC) $(CFLAGS) $(SRC) $(LIBS) -o $(PROGRAM)
+	
+%.o: %.c
+	$(CC) $(CFLAGS) -c $<
+
+clean:  
+	rm -f *.o $(PROGRAM)
