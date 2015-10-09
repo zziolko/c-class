@@ -7,7 +7,7 @@ CFLAGS=-I . -I $(INC_DIR) -std=c99
 LIBS=-lm
 
 # find all source files:
-SRC:=$(shell find * -iname '*.c')
+SRC:=$(shell find * -maxdepth 0 -iname '*.c' )
 
 # substitute .c with .o in source files:
 _OBJ=$(patsubst %.c,%.o,$(SRC))
