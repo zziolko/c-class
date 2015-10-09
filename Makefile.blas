@@ -1,0 +1,15 @@
+CC=gcc
+CFLAGS=-O2 -Wall
+LIBS=-lblas
+PROGRAM=matmul.x
+
+SRC=M29-blas.o 
+
+all: $(SRC)  
+	$(CC) $(CFLAGS) $(SRC) $(LIBS) -o $(PROGRAM)
+	
+%.o: %.c
+	$(CC) $(CFLAGS) -c $<
+
+clean:  
+	rm -f *.o $(PROGRAM)
