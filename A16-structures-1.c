@@ -4,7 +4,6 @@ void updateParticleVelocities(x, y, z, u, v, w, dt) {
     x = x + dt*u;
     y = y + dt*v;
     z = z + dt*w;
-   
 }
 
 int main(){

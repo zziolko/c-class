@@ -1,13 +1,15 @@
 #include <stdio.h>
 
-typedef struct ParticleStruct{
+struct Particle{
     double x;
     double y;
     double z;
     double u;
     double v;
     double w;
-} Particle;
+};
+
+typedef struct Particle Particle;
 
 Particle updateParticleVelocities(Particle particle, double dt) {
     particle.x = particle.x + dt*particle.u;
